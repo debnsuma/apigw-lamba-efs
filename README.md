@@ -41,6 +41,7 @@ The following diagram illustrates the solution architecture:
 Once the application is deployed, you can test by making some lambda invocation which will write, read and delete data from the Amazon EFS storage:
 
     $ curl https://<HTTP API Gateway Endpoint>
+    null
 
     $ curl -X POST -H "Content-Type: text/plain" -d 'Hello from EFS!' https://<HTTP API Gateway Endpoint>
     Hello from EFS!
@@ -57,6 +58,6 @@ Once the application is deployed, you can test by making some lambda invocation 
     Messages deleted.
 
     $ curl https://<HTTP API Gateway Endpoint>
-    No message yet.
+   null
 
     
