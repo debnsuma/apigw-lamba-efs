@@ -16,18 +16,19 @@ The following diagram illustrates the solution architecture:
 
 ## Deployment Instructions
 
-1. Create a new serverless application in AWS SAM using the following command:
+1. Create a new project directory and a new serverless application in AWS SAM using the following command:
     ``` 
+    $ mkdir efs-lambda-project
+    $ cd efs-lambda-project
     $ sam init
     ```
 2. Choose Custom Template Location (Choice: 2) as the template source, and provide the following GitHub template location: 
     ```
     https://github.com/debnsuma/apigw-lambda-efs.git
     ```
-3. From the command line, get inside the project directory, and build the application:
+3. From the command line, build the application:
     ```
-    $ cd apigw-lambda-efs
-    $ sam build –-use-container
+    $ sam build --use-container
     ```
 4. Deploy the application
     ```
