@@ -58,6 +58,6 @@ Once the application is deployed, you can test by making some lambda invocation 
     Messages deleted.
 
     $ curl https://<HTTP API Gateway Endpoint>
-   null
+    null
 
     
